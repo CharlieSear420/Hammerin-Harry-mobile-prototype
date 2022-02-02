@@ -6,9 +6,13 @@ public class HarryAttack : MonoBehaviour
 {
     
     public bool harryIsAttacking;
-    SpriteRenderer SP;
+    public SpriteRenderer SP;
     public Sprite nHammerSprite;
     public Sprite standSprite;
+    //SpriteRenderer spriteRenderer;
+    public Sprite jumpSprite;
+    //public Sprite standSprite;
+    public Sprite walkSprite;
     
     // Start is called before the first frame update
     void Start()

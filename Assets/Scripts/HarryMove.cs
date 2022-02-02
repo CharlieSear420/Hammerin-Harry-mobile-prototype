@@ -7,29 +7,17 @@ public class HarryMove : HarryAttack
     
     public GameObject camera;
     
-    SpriteRenderer spriteRenderer;
-    public Sprite jumpSprite;
-    public Sprite standSprite;
-    public Sprite walkSprite;
     public Transform GroundCheckPoint;
     public float GroundCheckRadius;
     public LayerMask GroundLayer;
     private bool isTouchingGround;
-    
-
-    public int lives = 1;
-
-    
     
     Rigidbody2D rb;
     
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
-
-      
     }
-
    
     void Update()
     {
@@ -39,16 +27,13 @@ public class HarryMove : HarryAttack
         velocity.x=0;
         velocity.y=5;
         
-        
         float xSpeed = 5.0f;
         float ySpeed = 5.0f;
         
-        
         if (Input.GetKey("a"))
         {
-            spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = walkSprite;   
-              
+            SP = GetComponent<SpriteRenderer>();
+            SP.sprite = walkSprite;   
 
             rb.velocity = new Vector2(-5,0);
         }
@@ -57,15 +42,11 @@ public class HarryMove : HarryAttack
             Stand();
         }
 
-
-
         if (Input.GetKey("d"))
         {
-            
-            spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = walkSprite; 
+            SP = GetComponent<SpriteRenderer>();
+            SP.sprite = walkSprite; 
      
-            
             rb.velocity = new Vector2(5,0);
         }
         else
@@ -75,50 +56,16 @@ public class HarryMove : HarryAttack
 
         if (Input.GetKey("w") && isTouchingGround)
         {
-            
-            
             rb.velocity=velocity;
-            
         }
-        
         
         if (isTouchingGround == false)
         {
-            spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = jumpSprite; 
+            SP = GetComponent<SpriteRenderer>();
+            SP.sprite = jumpSprite; 
         }
         
-        /*
-        if (isTouchingGround)
-        {
-            spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = standSprite; 
-        }
-        */
-        
-        return;
-        
-        
-        
-
-        if (Input.GetKey("x"))
-        {
-
-            lives = 0;
-
-        }
-
-         
+        return;    
     }
 
-    /*
-    public void RotateRight()
-    {
-        transform.Rotate (Vector3.forward);
-    }
-    public void RotateLeft()
-    {
-        transform.Rotate (Vector3.back);
-    }
-    */
 }
