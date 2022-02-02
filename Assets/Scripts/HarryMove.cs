@@ -2,45 +2,123 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HarryMove : MonoBehaviour
+public class HarryMove : HarryAttack
 {
-    public float speed = 1.0f;
+    
+    public GameObject camera;
+    
+    SpriteRenderer spriteRenderer;
+    public Sprite jumpSprite;
+    public Sprite standSprite;
+    public Sprite walkSprite;
+    public Transform GroundCheckPoint;
+    public float GroundCheckRadius;
+    public LayerMask GroundLayer;
+    private bool isTouchingGround;
+    
+
+    public int lives = 1;
+
     
     
-    // Start is called before the first frame update
+    Rigidbody2D rb;
+    
     void Start()
     {
-        
+       rb = GetComponent<Rigidbody2D>();
+
+      
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
+        isTouchingGround = Physics2D.OverlapCircle(GroundCheckPoint.position, GroundCheckRadius, GroundLayer);
+        Vector2 velocity=rb.velocity;
+
+        velocity.x=0;
+        velocity.y=5;
+        
+        
+        float xSpeed = 5.0f;
+        float ySpeed = 5.0f;
+        
+        
+        if (Input.GetKey("a"))
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = walkSprite;   
+              
+
+            rb.velocity = new Vector2(-5,0);
+        }
+        else
+        {
+            Stand();
+        }
+
+
+
+        if (Input.GetKey("d"))
+        {
+            
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = walkSprite; 
+     
+            
+            rb.velocity = new Vector2(5,0);
+        }
+        else
+        {
+            Stand();
+        }
+
+        if (Input.GetKey("w") && isTouchingGround)
+        {
+            
+            
+            rb.velocity=velocity;
+            
+        }
+        
+        
+        if (isTouchingGround == false)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = jumpSprite; 
+        }
+        
+        /*
+        if (isTouchingGround)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = standSprite; 
+        }
+        */
+        
+        return;
+        
+        
         
 
-        MovePlayer();
+        if (Input.GetKey("x"))
+        {
 
+            lives = 0;
 
+        }
 
-
+         
     }
 
-    public float GetX()
+    /*
+    public void RotateRight()
     {
-        return Input.GetAxis("Horizontal");
+        transform.Rotate (Vector3.forward);
     }
- 
-    public float GetY()
+    public void RotateLeft()
     {
-        return Input.GetAxis("Vertical");
+        transform.Rotate (Vector3.back);
     }
-
-    public void MovePlayer()
-    {
-       
-       
-        var move = new Vector3(GetX(), GetY(), 0);
-        transform.position += move * speed * Time.deltaTime;
- 
-    }
+    */
 }
