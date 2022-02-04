@@ -11,8 +11,14 @@ public class HarryMove : HarryAttack
     public float GroundCheckRadius;
     public LayerMask GroundLayer;
     private bool isTouchingGround;
+
+    public float runSpeed = 40f;
+    float horizontalMove = 0f;
+
+    public Joystick joystick;
+
     
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     
     void Start()
     {
@@ -29,7 +35,10 @@ public class HarryMove : HarryAttack
         
         float xSpeed = 5.0f;
         float ySpeed = 5.0f;
+
+        horizontalMove = joystick.Horizontal * runSpeed;
         
+        /*
         if (Input.GetKey("a"))
         {
             SP = GetComponent<SpriteRenderer>();
@@ -53,6 +62,7 @@ public class HarryMove : HarryAttack
         {
             Stand();
         }
+        */
 
         if (Input.GetKey("w") && isTouchingGround)
         {
@@ -67,5 +77,7 @@ public class HarryMove : HarryAttack
         
         return;    
     }
+
+
 
 }
