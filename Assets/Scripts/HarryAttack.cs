@@ -36,7 +36,7 @@ public class HarryAttack : MonoBehaviour
         }
         else
         {
-            harryIsAttacking = false;
+            harryIsAttacking = false;  
             Stand();
         }
     }

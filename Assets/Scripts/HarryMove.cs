@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class HarryMove : HarryAttack
 {
-    
+    //public CharacterController2D controller;
+
     public GameObject camera;
     
     public Transform GroundCheckPoint;
@@ -14,7 +15,7 @@ public class HarryMove : HarryAttack
 
     public float runSpeed = 40f;
     float horizontalMove = 0f;
-
+    float verticalMove = 0f;
     public Joystick joystick;
 
     
@@ -36,13 +37,18 @@ public class HarryMove : HarryAttack
         float xSpeed = 5.0f;
         float ySpeed = 5.0f;
 
-        horizontalMove = joystick.Horizontal * runSpeed;
+        horizontalMove = joystick.Horizontal;//* runSpeed;
+        verticalMove = joystick.Vertical;//* runSpeed;
+
+        //print("x=" + horizontalMove + "  y=" + verticalMove);
         
-        /*
-        if (Input.GetKey("a"))
+        //rb.velocity = new Vector2( horizontalMove * 5,0);
+        
+        if (Input.GetKey("a") || (horizontalMove<-0.1f))
         {
             SP = GetComponent<SpriteRenderer>();
-            SP.sprite = walkSprite;   
+            SP.sprite = walkSprite; 
+            SP.flipX = true;  
 
             rb.velocity = new Vector2(-5,0);
         }
@@ -51,10 +57,11 @@ public class HarryMove : HarryAttack
             Stand();
         }
 
-        if (Input.GetKey("d"))
+        if (Input.GetKey("d") || (horizontalMove>0.1f))
         {
             SP = GetComponent<SpriteRenderer>();
             SP.sprite = walkSprite; 
+            SP.flipX = false;  
      
             rb.velocity = new Vector2(5,0);
         }
@@ -62,11 +69,12 @@ public class HarryMove : HarryAttack
         {
             Stand();
         }
-        */
+        
 
-        if (Input.GetKey("w") && isTouchingGround)
+        if ( (Input.GetKeyDown("w") || (verticalMove>=0.3f)) && isTouchingGround)
         {
             rb.velocity=velocity;
+            print("do jump");
         }
         
         if (isTouchingGround == false)

@@ -15,11 +15,11 @@ C:/temp/Charlie Sear/Unity/Hammerin-Harry-mobile-prototype
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54899
+55818
 Successfully changed project path to: C:/temp/Charlie Sear/Unity/Hammerin-Harry-mobile-prototype
 C:/temp/Charlie Sear/Unity/Hammerin-Harry-mobile-prototype
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 133.80 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 162.32 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,276 +35,106 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.004852 seconds.
+Registered in 0.008163 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 135.90 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 160.09 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.597 seconds
+- Completed reload, in  2.133 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008133 seconds.
+Registered in 0.010421 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 157.99 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.482 seconds
+- Completed reload, in  2.301 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3678 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.1 MB.
-System memory in use after: 134.3 MB.
+Unloading 3663 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.7 MB.
+System memory in use after: 133.9 MB.
 
-Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 4106.
-Total: 3.932200 ms (FindLiveObjects: 0.703200 ms CreateObjectMapping: 0.406800 ms MarkObjects: 2.707700 ms  DeleteObjects: 0.112600 ms)
-
-========================================================================
-Received Import Request.
-  path: Packages/com.unity.2d.animation
-  artifactKey: Guid(bb5c94055a953b6081dfc49350569eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation using Guid(bb5c94055a953b6081dfc49350569eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2189443d13514fa9841f50374a4b75c2') in 0.014030 seconds
-  Import took 0.020219 seconds .
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 4096.
+Total: 3.122600 ms (FindLiveObjects: 0.410200 ms CreateObjectMapping: 0.214900 ms MarkObjects: 2.402500 ms  DeleteObjects: 0.093200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 89.052896 seconds.
-  path: Packages/com.unity.2d.spriteshape
-  artifactKey: Guid(9f9e809966b8f16f626c5fa29105d97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape using Guid(9f9e809966b8f16f626c5fa29105d97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8914cf82e8ffee8a949b1bdf710678e4') in 0.012457 seconds
-  Import took 0.019955 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.482534 seconds.
-  path: Packages/com.unity.2d.spriteshape/package.json
-  artifactKey: Guid(4eabc3d1ad1424372b03cfc117521e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/package.json using Guid(4eabc3d1ad1424372b03cfc117521e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7af6f0696fd36d16e068b619ea3ff53') in 0.051686 seconds
-  Import took 0.058498 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007229 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.632 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3297 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 125.9 MB.
-System memory in use after: 126.2 MB.
-
-Unloading 142 unused Assets to reduce memory usage. Loaded Objects now: 3983.
-Total: 3.296000 ms (FindLiveObjects: 0.384800 ms CreateObjectMapping: 0.180000 ms MarkObjects: 2.610800 ms  DeleteObjects: 0.119200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008111 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 121.36 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.471 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3642 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.2 MB.
-System memory in use after: 133.4 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4109.
-Total: 5.486000 ms (FindLiveObjects: 0.550800 ms CreateObjectMapping: 0.379500 ms MarkObjects: 4.501900 ms  DeleteObjects: 0.051900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 319.034644 seconds.
-  path: Assets/Sprites
-  artifactKey: Guid(1fff3271ad419214a9e3b69c4748eb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites using Guid(1fff3271ad419214a9e3b69c4748eb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828a8968cee65703b5a8c26be9cd660d') in 0.016679 seconds
-  Import took 0.024311 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028762 seconds.
-  path: Assets/Sprites/Harry Sprite sheet.png
-  artifactKey: Guid(f52ddfa448f9ed940b4911f86fd53181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Harry Sprite sheet.png using Guid(f52ddfa448f9ed940b4911f86fd53181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b5577160d266c0ccb7272201d7cf09') in 0.113208 seconds
-  Import took 0.122885 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Sprites/harry__wth_bg-removebg-preview.png
-  artifactKey: Guid(40729a12cf78a4b4ea965f5b00082967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/harry__wth_bg-removebg-preview.png using Guid(40729a12cf78a4b4ea965f5b00082967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c5e5068347c9ed8bbb8109e95135a18') in 0.029756 seconds
-  Import took 0.037962 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Sprites/HarryRun-removebg-preview.png
-  artifactKey: Guid(9a561f5756662994097ba99b62e0cbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/HarryRun-removebg-preview.png using Guid(9a561f5756662994097ba99b62e0cbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1278648fdc0cceefb30f390efebf5e87') in 0.033684 seconds
-  Import took 0.041329 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000373 seconds.
-  path: Assets/Sprites/HarryJump-removebg-preview.png
-  artifactKey: Guid(cdbd4f403d00c56409e296d49971ea48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/HarryJump-removebg-preview.png using Guid(cdbd4f403d00c56409e296d49971ea48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c6f2f5faf1a1c9669d42a84d720ddbf') in 0.027539 seconds
-  Import took 0.036702 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000457 seconds.
-  path: Assets/Sprites/harry_hammer_swing-removebg-preview.png
-  artifactKey: Guid(e438b8124b6b6cd4194bff21f6300e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/harry_hammer_swing-removebg-preview.png using Guid(e438b8124b6b6cd4194bff21f6300e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e7ea6e450f186bb752d7017e681910') in 0.035460 seconds
-  Import took 0.043239 seconds .
+  path: Assets/Joystick Pack/Prefabs/Variable Joystick.prefab
+  artifactKey: Guid(ec536a7718376554185e4a856d5ae230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack/Prefabs/Variable Joystick.prefab using Guid(ec536a7718376554185e4a856d5ae230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea0b114c49327c902b9ecc0af5ec86e') in 0.096647 seconds
+  Import took 0.135427 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000203 seconds.
-  path: Assets/Sprites/highrise background.jpg
-  artifactKey: Guid(3197c45cdc3e59d4e819a2012fe79290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/highrise background.jpg using Guid(3197c45cdc3e59d4e819a2012fe79290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6240a70061dc2b0641af301a0e3078') in 0.030002 seconds
-  Import took 0.036554 seconds .
+  path: Assets/Joystick Pack/Prefabs/Dynamic Joystick.prefab
+  artifactKey: Guid(56fae09712773584fb63896d473a98ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack/Prefabs/Dynamic Joystick.prefab using Guid(56fae09712773584fb63896d473a98ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '749cd4108578ad4e0d4ef3b1ff6ec539') in 0.019235 seconds
+  Import took 0.030017 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 208.890327 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20843b87781098ba84afba1e4b3b97c3') in 0.016137 seconds
-  Import took 0.024174 seconds .
+  Time since last request: 0.000214 seconds.
+  path: Assets/Joystick Pack/Prefabs/Fixed Joystick.prefab
+  artifactKey: Guid(aaa2c939c0359ac4dbce3f49e8b90252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack/Prefabs/Fixed Joystick.prefab using Guid(aaa2c939c0359ac4dbce3f49e8b90252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05bbebf50f53f82c1801bc9ce3d3ae8c') in 0.015062 seconds
+  Import took 0.021174 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002100 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20843b87781098ba84afba1e4b3b97c3') in 0.007227 seconds
-  Import took 0.022817 seconds .
+  Time since last request: 0.000184 seconds.
+  path: Assets/Joystick Pack/Prefabs/Floating Joystick.prefab
+  artifactKey: Guid(0d230cc8be529a542a08cb878ab14b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack/Prefabs/Floating Joystick.prefab using Guid(0d230cc8be529a542a08cb878ab14b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84252703f7912ab030e8c7758bb259e6') in 0.012605 seconds
+  Import took 0.020428 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007853 seconds.
+Registered in 0.009253 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.17 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.413 seconds
+- Completed reload, in  1.661 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.82 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3642 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.3 MB.
-System memory in use after: 136.5 MB.
+Unloading 3653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.2 MB.
+System memory in use after: 133.5 MB.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4128.
-Total: 3.521300 ms (FindLiveObjects: 0.430300 ms CreateObjectMapping: 0.220700 ms MarkObjects: 2.795000 ms  DeleteObjects: 0.073800 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4099.
+Total: 3.608200 ms (FindLiveObjects: 0.658800 ms CreateObjectMapping: 0.354900 ms MarkObjects: 2.565100 ms  DeleteObjects: 0.027700 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.037291 seconds.
+Registered in 0.007596 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.061 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.87 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3642 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.3 MB.
-System memory in use after: 136.5 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4131.
-Total: 3.671400 ms (FindLiveObjects: 0.423100 ms CreateObjectMapping: 0.232500 ms MarkObjects: 2.942500 ms  DeleteObjects: 0.071600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007549 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.478 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.12 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3642 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.2 MB.
-System memory in use after: 136.5 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4134.
-Total: 6.104200 ms (FindLiveObjects: 0.765100 ms CreateObjectMapping: 0.441500 ms MarkObjects: 4.814100 ms  DeleteObjects: 0.081000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007245 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
@@ -312,65 +142,37 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.340 seconds
+- Completed reload, in  1.451 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3642 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.3 MB.
-System memory in use after: 136.6 MB.
+Unloading 3653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.3 MB.
+System memory in use after: 133.5 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4137.
-Total: 3.413300 ms (FindLiveObjects: 0.474600 ms CreateObjectMapping: 0.172500 ms MarkObjects: 2.716900 ms  DeleteObjects: 0.048100 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4102.
+Total: 4.168200 ms (FindLiveObjects: 0.362000 ms CreateObjectMapping: 0.393100 ms MarkObjects: 3.346200 ms  DeleteObjects: 0.065400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.009824 seconds.
+Registered in 0.010365 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.99 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.549 seconds
+- Completed reload, in  1.612 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.82 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3642 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.3 MB.
-System memory in use after: 136.6 MB.
+Unloading 3653 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.3 MB.
+System memory in use after: 133.6 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4140.
-Total: 23.213200 ms (FindLiveObjects: 8.095400 ms CreateObjectMapping: 0.339000 ms MarkObjects: 14.721900 ms  DeleteObjects: 0.055100 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4105.
+Total: 3.379600 ms (FindLiveObjects: 0.440700 ms CreateObjectMapping: 0.238500 ms MarkObjects: 2.629900 ms  DeleteObjects: 0.069600 ms)
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010577 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\temp\Charlie Sear\Unity\Hammerin-Harry-mobile-prototype\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.429 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.15 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3642 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.3 MB.
-System memory in use after: 136.5 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4143.
-Total: 3.145400 ms (FindLiveObjects: 0.358700 ms CreateObjectMapping: 0.152800 ms MarkObjects: 2.565900 ms  DeleteObjects: 0.066600 ms)
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
