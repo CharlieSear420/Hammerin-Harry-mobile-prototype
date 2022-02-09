@@ -31,20 +31,21 @@ public class HarryMove : HarryAttack
         isTouchingGround = Physics2D.OverlapCircle(GroundCheckPoint.position, GroundCheckRadius, GroundLayer);
         Vector2 velocity=rb.velocity;
 
-        velocity.x=0;
-        velocity.y=8;
         
+        /*
         float xSpeed = 5.0f;
         float ySpeed = 5.0f;
-
+        */
         horizontalMove = joystick.Horizontal;//* runSpeed;
         verticalMove = joystick.Vertical;//* runSpeed;
+        
 
         //print("x=" + horizontalMove + "  y=" + verticalMove);
         
         //rb.velocity = new Vector2( horizontalMove * 5,0);
 
-        Attack();
+        
+        Stand();
         
         if (Input.GetKey("a") || (horizontalMove<-0.1f))
         {
@@ -52,11 +53,7 @@ public class HarryMove : HarryAttack
             SP.sprite = walkSprite; 
             SP.flipX = true;  
 
-            rb.velocity = new Vector2(-5,0);
-        }
-        else
-        {
-            Stand();
+            velocity.x=-3;
         }
 
         if (Input.GetKey("d") || (horizontalMove>0.1f))
@@ -65,17 +62,13 @@ public class HarryMove : HarryAttack
             SP.sprite = walkSprite; 
             SP.flipX = false;  
      
-            rb.velocity = new Vector2(5,0);
-        }
-        else
-        {
-            Stand();
+            velocity.x = 3;
         }
         
 
         if ( (Input.GetKeyDown("w") || (verticalMove>=0.3f)) && isTouchingGround)
         {
-            rb.velocity=velocity;
+            velocity.y = 6;
             //print("do jump");
         }
         
@@ -85,18 +78,18 @@ public class HarryMove : HarryAttack
             SP.sprite = jumpSprite; 
         }
 
-
+        Attack();
         
 
+        rb.velocity = velocity;
         
-        return;    
     }
 
     public void Attack()
     {
         
 
-        if (Input.GetKeyDown("g"))
+        if (Input.GetKey("g"))
         {
             
             harryIsAttacking = true;
@@ -108,8 +101,7 @@ public class HarryMove : HarryAttack
         else
         {
             harryIsAttacking = false;  
-            SP = GetComponent<SpriteRenderer>();
-            SP.sprite = standSprite;
+            
         }
     }
 
