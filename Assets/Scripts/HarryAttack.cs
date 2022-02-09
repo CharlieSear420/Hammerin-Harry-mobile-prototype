@@ -25,23 +25,27 @@ public class HarryAttack : MonoBehaviour
     {
         
     }
-
-    public void hammerAttack()
+    
+    public void HammerAttack()
     {
         if (Input.GetKey("g"))
         {
-            swingHammer();
-            print("mouse click");
+            
             harryIsAttacking = true;
+            SP = GetComponent<SpriteRenderer>();
+            SP.sprite = nHammerSprite;
+            print("mouse click");
+            
         }
         else
         {
             harryIsAttacking = false;  
-            Stand();
+            SP = GetComponent<SpriteRenderer>();
+            SP.sprite = standSprite;
         }
     }
 
-    public void swingHammer()
+    public void SwingHammer()
     {
         SP = GetComponent<SpriteRenderer>();
         SP.sprite = nHammerSprite;

@@ -32,7 +32,7 @@ public class HarryMove : HarryAttack
         Vector2 velocity=rb.velocity;
 
         velocity.x=0;
-        velocity.y=5;
+        velocity.y=8;
         
         float xSpeed = 5.0f;
         float ySpeed = 5.0f;
@@ -43,6 +43,8 @@ public class HarryMove : HarryAttack
         //print("x=" + horizontalMove + "  y=" + verticalMove);
         
         //rb.velocity = new Vector2( horizontalMove * 5,0);
+
+        Attack();
         
         if (Input.GetKey("a") || (horizontalMove<-0.1f))
         {
@@ -74,7 +76,7 @@ public class HarryMove : HarryAttack
         if ( (Input.GetKeyDown("w") || (verticalMove>=0.3f)) && isTouchingGround)
         {
             rb.velocity=velocity;
-            print("do jump");
+            //print("do jump");
         }
         
         if (isTouchingGround == false)
@@ -82,8 +84,33 @@ public class HarryMove : HarryAttack
             SP = GetComponent<SpriteRenderer>();
             SP.sprite = jumpSprite; 
         }
+
+
+        
+
         
         return;    
+    }
+
+    public void Attack()
+    {
+        
+
+        if (Input.GetKeyDown("g"))
+        {
+            
+            harryIsAttacking = true;
+            SP = GetComponent<SpriteRenderer>();
+            SP.sprite = nHammerSprite;
+            print("mouse click");
+            
+        }
+        else
+        {
+            harryIsAttacking = false;  
+            SP = GetComponent<SpriteRenderer>();
+            SP.sprite = standSprite;
+        }
     }
 
 
