@@ -18,6 +18,9 @@ public class HarryMove : HarryAttack
     float verticalMove = 0f;
     public Joystick joystick;
 
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
     
     public Rigidbody2D rb;
     
@@ -91,18 +94,37 @@ public class HarryMove : HarryAttack
 
         if (Input.GetKey("g"))
         {
-            
             harryIsAttacking = true;
+            //animate
             SP = GetComponent<SpriteRenderer>();
             SP.sprite = nHammerSprite;
-            print("mouse click");
             
+            //detect enemies within range
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+            //damage them
+            foreach(Collider2D enemy in hitEnemies)
+            {
+                print ("We hit " + enemy.name);
+            }
+        
         }
         else
         {
             harryIsAttacking = false;  
             
         }
+    }
+
+    public void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null!)
+        {
+            return;
+        }
+            
+        
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
 
