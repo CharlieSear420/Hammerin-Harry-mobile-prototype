@@ -7,17 +7,24 @@ public class HarryMove : HarryAttack
     //public CharacterController2D controller;
 
     public GameObject camera;
+
+    public int countDown;
+
+    public int i;
     
+    //ground check
     public Transform GroundCheckPoint;
     public float GroundCheckRadius;
     public LayerMask GroundLayer;
     private bool isTouchingGround;
-
+    
+    //joystick movement
     public float runSpeed = 40f;
     float horizontalMove = 0f;
     float verticalMove = 0f;
     public Joystick joystick;
 
+    //attacking
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
@@ -53,7 +60,8 @@ public class HarryMove : HarryAttack
         if (Input.GetKey("a") || (horizontalMove<-0.1f))
         {
             SP = GetComponent<SpriteRenderer>();
-            SP.sprite = walkSprite; 
+            SP.sprite = walkSprite;
+            
             SP.flipX = true;  
 
             velocity.x=-3;
@@ -71,7 +79,7 @@ public class HarryMove : HarryAttack
 
         if ( (Input.GetKeyDown("w") || (verticalMove>=0.3f)) && isTouchingGround)
         {
-            velocity.y = 6;
+            velocity.y = 5;
             //print("do jump");
         }
         
