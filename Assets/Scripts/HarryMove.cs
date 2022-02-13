@@ -17,6 +17,8 @@ public class HarryMove : HarryAttack
     public float GroundCheckRadius;
     public LayerMask GroundLayer;
     private bool isTouchingGround;
+
+    
     
     //joystick movement
     public float runSpeed = 40f;
@@ -26,8 +28,10 @@ public class HarryMove : HarryAttack
 
     //attacking
     public Transform attackPoint;
+    public Transform attackPoint2;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    public int attackDamage = 110;
     
     public Rigidbody2D rb;
     
@@ -108,13 +112,30 @@ public class HarryMove : HarryAttack
             SP.sprite = nHammerSprite;
             
             //detect enemies within range
-            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers); 
+            
+
+
+            Collider2D[] hitBadEnemies = Physics2D.OverlapCircleAll(attackPoint2.position, attackRange, enemyLayers);
 
             //damage them
             foreach(Collider2D enemy in hitEnemies)
             {
                 print ("We hit " + enemy.name);
+
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                enemy.GetComponent<BossEnemy>().TakeDamage(attackDamage);
             }
+
+            foreach(Collider2D enemy in hitBadEnemies)
+            {
+                print ("We hit " + enemy.name);
+
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                enemy.GetComponent<BossEnemy>().TakeDamage(attackDamage);
+            }
+
+            
         
         }
         else

@@ -9,6 +9,7 @@ public class HarryAttack : MonoBehaviour
     public SpriteRenderer SP;
     public Sprite nHammerSprite;
     public Sprite standSprite;
+    public Sprite enemyDead;
     //SpriteRenderer spriteRenderer;
     public Sprite jumpSprite;
     //public Sprite standSprite;
