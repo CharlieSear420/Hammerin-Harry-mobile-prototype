@@ -88,7 +88,7 @@ public class HarryMove : HarryAttack
         if ( (Input.GetKeyDown("w") || (verticalMove>=0.3f)) && isTouchingGround)
         {
             velocity.y = 5;
-            //print("do jump");
+            
         }
         
         if (isTouchingGround == false)

@@ -46,7 +46,7 @@ public class ButtonController : HarryAttack
             print ("We hit " + enemy.name);
 
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-            //enemy.GetComponent<BossEnemy>().TakeDamage(attackDamage);
+            
         }
 
         foreach(Collider2D enemy in hitBadEnemies)
@@ -54,7 +54,16 @@ public class ButtonController : HarryAttack
             print ("We hit " + enemy.name);
 
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-            //enemy.GetComponent<BossEnemy>().TakeDamage(attackDamage);
+            
+        }
+
+        foreach(Collider2D box in hitBadEnemies)
+        {
+            box.GetComponent<Box>().TakeDamage();
+        }
+        foreach(Collider2D box in hitEnemies)
+        {
+            box.GetComponent<Box>().TakeDamage();
         }
     }
 
