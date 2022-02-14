@@ -26,7 +26,7 @@ public class HarryAttack : MonoBehaviour
     {
         
     }
-    
+    /*
     public void HammerAttack()
     {
         if (Input.GetKey("g"))
@@ -45,7 +45,7 @@ public class HarryAttack : MonoBehaviour
             SP.sprite = standSprite;
         }
     }
-
+*/
     public void SwingHammer()
     {
         SP = GetComponent<SpriteRenderer>();

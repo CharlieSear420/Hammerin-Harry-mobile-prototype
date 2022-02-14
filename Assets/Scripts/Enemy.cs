@@ -7,9 +7,9 @@ public class Enemy : HarryAttack
 {
     public int maxHealth = 100;
 
-    int currentHealth;
+    public int currentHealth;
 
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     
     
     public float speed = 35f;
@@ -53,7 +53,8 @@ public class Enemy : HarryAttack
         SP = GetComponent<SpriteRenderer>();
         SP.sprite = enemyDead;
         //disbale enemy
-        //GameObject.Destroy(this);
+        gameObject.SetActive(false);
+
 
         //rb = false;
         // find the code to deactivate the rigidbpdy and box collider so the skull and crossbones wont collide with player (?)

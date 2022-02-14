@@ -1,63 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
-public class BossEnemy : HarryAttack
+public class BossEnemy : Enemy
 {
-    public int maxHealth = 10000;
 
-    public int currentHealth;
+    public GameObject VictoryScreen;
 
-    public Rigidbody2D rb;
     
-    
-    public float speed = 35f;
-    
-    public Transform target;
-    
-   
-    void Start()
-    {
-        currentHealth = maxHealth;
-        rb = GetComponent<Rigidbody2D>();
-        
-    }
-
     void Update()
     {
-        
-    }
-
-    public void TakeDamage (int TakeDamage)
-    {
-        currentHealth -= TakeDamage;
-
-        //animate (?)
-
-        if(currentHealth <=0)
+        if (currentHealth <= 0 )
         {
-            Die();
+            VictoryScreen.SetActive(true);
         }
-
-
     }
 
-    
-
-    void Die()
+    public void LoadGame()
     {
-        print ("dead");
-        
-        //die anim (?)
-        SP = GetComponent<SpriteRenderer>();
-        SP.sprite = enemyDead;
-        //disbale enemy
-        //GameObject.Destroy(this);
-
-        //rb = false;
-        // find the code to deactivate the rigidbpdy and box collider so the skull and crossbones wont collide with player (?)
+        //Time.timeScale = 1f;
+        SceneManager.LoadScene("SampleScene");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+        //^^^Slash this out when building^^^
+        Debug.Log("Quit");
+
+
+    }
+
 
     
 }

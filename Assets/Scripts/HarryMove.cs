@@ -44,7 +44,7 @@ public class HarryMove : HarryAttack
    
     void Update()
     {
-        Attack();
+        //Attack();
         
         isTouchingGround = Physics2D.OverlapCircle(GroundCheckPoint.position, GroundCheckRadius, GroundLayer);
         Vector2 velocity=rb.velocity;
@@ -103,7 +103,7 @@ public class HarryMove : HarryAttack
         rb.velocity = velocity;
         
     }
-
+    /*
     public void Attack()
     {
         
@@ -152,7 +152,7 @@ public class HarryMove : HarryAttack
 
 
     }
-    
+    */
 
     public void OnDrawGizmosSelected()
     {
