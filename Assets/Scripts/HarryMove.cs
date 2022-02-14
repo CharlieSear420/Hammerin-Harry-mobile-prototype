@@ -130,7 +130,7 @@ public class HarryMove : HarryAttack
                 print ("We hit " + enemy.name);
 
                 enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-                enemy.GetComponent<BossEnemy>().TakeDamage(attackDamage);
+                //enemy.GetComponent<BossEnemy>().TakeDamage(attackDamage);
             }
 
             foreach(Collider2D enemy in hitBadEnemies)
@@ -138,7 +138,7 @@ public class HarryMove : HarryAttack
                 print ("We hit " + enemy.name);
 
                 enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-                enemy.GetComponent<BossEnemy>().TakeDamage(attackDamage);
+                //enemy.GetComponent<BossEnemy>().TakeDamage(attackDamage);
             }
 
             
