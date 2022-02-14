@@ -11,6 +11,8 @@ public class HarryMove : HarryAttack
     public int countDown;
 
     public int i;
+
+    
     
     //ground check
     public Transform GroundCheckPoint;
@@ -42,6 +44,8 @@ public class HarryMove : HarryAttack
    
     void Update()
     {
+        Attack();
+        
         isTouchingGround = Physics2D.OverlapCircle(GroundCheckPoint.position, GroundCheckRadius, GroundLayer);
         Vector2 velocity=rb.velocity;
 
@@ -93,7 +97,7 @@ public class HarryMove : HarryAttack
             SP.sprite = jumpSprite; 
         }
 
-        Attack();
+        
         
 
         rb.velocity = velocity;
@@ -103,6 +107,8 @@ public class HarryMove : HarryAttack
     public void Attack()
     {
         
+        
+
 
         if (Input.GetKey("g"))
         {
@@ -143,7 +149,10 @@ public class HarryMove : HarryAttack
             harryIsAttacking = false;  
             
         }
+
+
     }
+    
 
     public void OnDrawGizmosSelected()
     {

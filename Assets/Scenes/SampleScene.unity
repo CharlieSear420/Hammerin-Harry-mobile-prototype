@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 92545460}
   - component: {fileID: 92545459}
   - component: {fileID: 92545458}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 142798709}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 231666294}
   - component: {fileID: 231666293}
   - component: {fileID: 231666292}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: 385234097}
   - component: {fileID: 385234096}
   - component: {fileID: 385234095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1042,7 +1042,7 @@ GameObject:
   - component: {fileID: 404693967}
   - component: {fileID: 404693966}
   - component: {fileID: 404693965}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 461090826}
   - component: {fileID: 461090825}
   - component: {fileID: 461090824}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1389,7 @@ GameObject:
   - component: {fileID: 478683783}
   - component: {fileID: 478683782}
   - component: {fileID: 478683781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1521,7 +1521,7 @@ GameObject:
   - component: {fileID: 584785695}
   - component: {fileID: 584785694}
   - component: {fileID: 584785693}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1653,7 +1653,7 @@ GameObject:
   - component: {fileID: 601333594}
   - component: {fileID: 601333593}
   - component: {fileID: 601333592}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1773,6 +1773,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &694136079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694136080}
+  - component: {fileID: 694136082}
+  - component: {fileID: 694136081}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &694136080
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694136079}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1451692207}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &694136081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694136079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 41
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 41
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Attack
+--- !u!222 &694136082
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694136079}
+  m_CullTransparentMesh: 1
 --- !u!1 &749551498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,7 +1864,7 @@ GameObject:
   - component: {fileID: 749551502}
   - component: {fileID: 749551501}
   - component: {fileID: 749551500}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2073,7 +2152,7 @@ GameObject:
   - component: {fileID: 820525867}
   - component: {fileID: 820525866}
   - component: {fileID: 820525865}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2205,7 +2284,7 @@ GameObject:
   - component: {fileID: 838193995}
   - component: {fileID: 838193994}
   - component: {fileID: 838193993}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2684,7 +2763,7 @@ GameObject:
   - component: {fileID: 1088436622}
   - component: {fileID: 1088436621}
   - component: {fileID: 1088436620}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2816,7 +2895,7 @@ GameObject:
   - component: {fileID: 1107036371}
   - component: {fileID: 1107036370}
   - component: {fileID: 1107036369}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2948,7 +3027,7 @@ GameObject:
   - component: {fileID: 1153775114}
   - component: {fileID: 1153775113}
   - component: {fileID: 1153775112}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3933,7 +4012,7 @@ GameObject:
   - component: {fileID: 1405316219}
   - component: {fileID: 1405316218}
   - component: {fileID: 1405316217}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4145,6 +4224,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2062470591}
+  - {fileID: 1451692207}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4153,6 +4233,139 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1451692206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451692207}
+  - component: {fileID: 1451692210}
+  - component: {fileID: 1451692209}
+  - component: {fileID: 1451692208}
+  m_Layer: 5
+  m_Name: Attack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1451692207
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451692206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 694136080}
+  m_Father: {fileID: 1448680825}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 196, y: -45.54149}
+  m_SizeDelta: {x: 160, y: 116.917}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1451692208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451692206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.7924528, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.5943396, g: 0, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1451692209}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1881018984}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: OnButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1451692209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451692206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1451692210
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451692206}
+  m_CullTransparentMesh: 1
 --- !u!1 &1476727433
 GameObject:
   m_ObjectHideFlags: 0
@@ -4165,7 +4378,7 @@ GameObject:
   - component: {fileID: 1476727437}
   - component: {fileID: 1476727436}
   - component: {fileID: 1476727435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4297,7 +4510,7 @@ GameObject:
   - component: {fileID: 1477782882}
   - component: {fileID: 1477782881}
   - component: {fileID: 1477782880}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4512,7 +4725,7 @@ GameObject:
   - component: {fileID: 1553365194}
   - component: {fileID: 1553365193}
   - component: {fileID: 1553365192}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4644,7 +4857,7 @@ GameObject:
   - component: {fileID: 1570680688}
   - component: {fileID: 1570680687}
   - component: {fileID: 1570680686}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4982,7 +5195,7 @@ GameObject:
   - component: {fileID: 1776356506}
   - component: {fileID: 1776356505}
   - component: {fileID: 1776356504}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5114,7 +5327,7 @@ GameObject:
   - component: {fileID: 1832882089}
   - component: {fileID: 1832882088}
   - component: {fileID: 1832882087}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5329,7 +5542,7 @@ GameObject:
   - component: {fileID: 1853899743}
   - component: {fileID: 1853899742}
   - component: {fileID: 1853899741}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5619,6 +5832,7 @@ GameObject:
   - component: {fileID: 1881018980}
   - component: {fileID: 1881018979}
   - component: {fileID: 1881018978}
+  - component: {fileID: 1881018984}
   m_Layer: 0
   m_Name: HARRY
   m_TagString: Untagged
@@ -5708,7 +5922,7 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 256
-  attackDamage: 40
+  attackDamage: 110
   rb: {fileID: 0}
 --- !u!114 &1881018981
 MonoBehaviour:
@@ -5799,6 +6013,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881018984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881018977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1dee26cbb32434aacf7325d6b32bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  harryIsAttacking: 0
+  SP: {fileID: 0}
+  nHammerSprite: {fileID: 21300000, guid: 12b617bd900db9a48887457797eb3c65, type: 3}
+  standSprite: {fileID: 21300000, guid: 6850b42d47724214b858260c368ffca9, type: 3}
+  enemyDead: {fileID: 0}
+  jumpSprite: {fileID: 21300000, guid: e28be1d02952f84448868f9d726310fd, type: 3}
+  walkSprite: {fileID: 21300000, guid: 3ebae8c94fcd8d748bd5799daa426de8, type: 3}
+  camera: {fileID: 0}
+  countDown: 0
+  i: 0
+  GroundCheckPoint: {fileID: 0}
+  GroundCheckRadius: 0
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  runSpeed: 40
+  joystick: {fileID: 0}
+  attackPoint: {fileID: 1749241179}
+  attackPoint2: {fileID: 1275399985}
+  attackRange: 0.11
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  attackDamage: 110
+  rb: {fileID: 0}
+  n: 0
 --- !u!1 &1929324212
 GameObject:
   m_ObjectHideFlags: 0
@@ -5811,7 +6063,7 @@ GameObject:
   - component: {fileID: 1929324216}
   - component: {fileID: 1929324215}
   - component: {fileID: 1929324214}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5959,7 +6211,7 @@ GameObject:
   - component: {fileID: 2092509952}
   - component: {fileID: 2092509951}
   - component: {fileID: 2092509950}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: crate 2D (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
