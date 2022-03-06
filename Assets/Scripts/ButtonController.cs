@@ -29,7 +29,7 @@ public class ButtonController : HarryAttack
         n++;
         print("Button was pressed " + n + " times");
         //animate
-        
+        AnimateAttack();
 
         //SwingHammer();
             
